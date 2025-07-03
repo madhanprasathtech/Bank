@@ -7,7 +7,7 @@ import com.example.Myweb.entity.Bankentity;
 
 public interface Bankrepository extends JpaRepository<Bankentity,Integer> {
 
-	@Query(value="select branch from bank_details where ifsc = ?", nativeQuery = true)
+	@Query(value="select branch from bank_details where ifsc = ?1", nativeQuery = true)
 	String getall(int a);
 
 

@@ -28,4 +28,9 @@ public class Bankcontroller {
 	public String get(@PathVariable int a){
 		return bs.getall(a);
 	}
+	@GetMapping("/pathing")
+	public String getf(){
+		return "hello successfully";
+	}
+	
 }
